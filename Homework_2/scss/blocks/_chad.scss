@@ -1,0 +1,99 @@
+.chad {
+    padding: 120px 0px;
+    position: relative;
+    &__card {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding: 0px 82px 0px 160px;
+    }
+    &__descr {
+        max-width: 478px;
+    }
+    &__title {
+        color: $black_main;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 64px; /* 133.333% */
+        letter-spacing: -0.96px;
+
+        margin-top: 80px;
+    }
+    &__text {
+        color: $black_additional;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+
+        margin-top: 24px;
+    }
+    &__statistics {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 64px;
+        gap: 64px;
+    }
+    &__statistics-cell-1 {
+        max-width: 79px;
+    }
+    &__statistics-cell-2 {
+        max-width: 87px;
+    }
+    &__statistics-cell-3 {
+        max-width: 46px;
+    }
+    &__cell-number {
+        color: $black_main;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 100% */
+    }
+    &__cell-text {
+        color: $black_main;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+    }
+    &__reward {
+        position: absolute;
+        top: 568px;
+        left: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        flex-shrink: 0;
+        border-radius: 10000px;
+        background: $icon_main;
+    }
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .chad {
+        &__reward {
+            display: none;
+        }
+        &__card {
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            max-width: 800px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .chad {
+        &__Gigachad-img {
+            max-width: 280px;
+        }
+    }
+}

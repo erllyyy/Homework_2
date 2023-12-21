@@ -1,0 +1,126 @@
+.works {
+    &__tabs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 17px;
+        margin-top: 38px;
+    }
+    &__tab {
+        display: flex;
+        padding: 4px 16px;
+        align-items: flex-start;
+        gap: 8px;
+        cursor: pointer;
+        border-radius: 10000px;
+        background: $black_main;
+
+        color: $white_main;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 150% */
+
+        &:hover {
+            background: $black_hover;
+        }
+        &_outlined {
+            border: 1px solid $black_additional;
+            background: none;
+            color: $black_main;
+
+            &:hover {
+                background: $white_hover;
+            }
+    }
+    }
+    &__imgs {
+        margin-top: 40px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    &__wrapper-2-imgs {
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+    }
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    .works {
+        &__tabs {
+            max-width: 768px;
+        }
+        &__img {
+            max-width: 768px;
+        }
+        &__wrapper-2-imgs {
+            flex-direction: column;
+        }
+        &__img_1 {
+            max-width: 768px;
+        }
+        &__img_2 {
+            width: 768px;
+        }
+        &__img_3 {
+            max-width: 768px;
+        }
+        &__img_4 {
+            width: 768px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .works {
+        &__tabs {
+            max-width: 576px;
+        }
+        &__img {
+            max-width: 576px;
+        }
+        &__img_1 {
+            max-width: 576px;
+        }
+        &__img_2 {
+            width: 576px;
+        }
+        &__img_3 {
+            max-width: 576px;
+        }
+        &__img_4 {
+            width: 576px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .works {
+        &__tab {
+            font-size: 7px;
+        }
+        &__tabs {
+            max-width: 280px;
+        }
+        &__img {
+            max-width: 280px;
+        }
+        &__img_1 {
+            max-width: 280px;
+        }
+        &__img_2 {
+            width: 280px;
+        }
+        &__img_3 {
+            max-width: 280px;
+        }
+        &__img_4 {
+            width: 280px;
+        }
+    }
+}

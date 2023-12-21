@@ -1,0 +1,42 @@
+@import './identic/colors';
+@import './identic/typography';
+@import './identic/buttons';
+@import './blocks/header';
+@import './blocks/promo';
+@import './blocks/works';
+@import './blocks/chad';
+@import './blocks/services';
+@import './blocks/cost';
+@import './blocks/answers';
+@import './blocks/application';
+
+
+
+* {
+  margin: 0;
+  border: none;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway;
+}
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 70%;
+  }
+}

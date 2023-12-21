@@ -1,0 +1,167 @@
+.application {
+    text-align: center;
+    padding: 120px 0px 160px 0px;
+    position: relative;
+    &__speech {
+        margin-top: 8px;
+    }
+    &__content {
+        display:inline-flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 80px;
+    }
+    &__empty {
+        width: 24px;
+        height: 24px;
+    }
+    &__form {
+        display: inline-flex;
+        padding: 40px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        border-radius: 16px;
+        border: 1px solid #CCC;
+        background: $white_main;
+
+        width: 448px;
+    }
+    &__input {
+        display: flex;
+        width: 100%;
+        height: 48px;
+        padding: 0px 16px;
+        align-items: center;
+        border-radius: 8px;
+        border: 1px solid $secondary_black;
+    }
+    &__comment {
+        text-align: left;
+        display: flex;
+        width: 100%;
+        height: 160px;
+        padding: 0px 16px;
+        align-items: center;
+        border-radius: 8px;
+        border: 1px solid $secondary_black;
+    }
+    &__service {
+        display: flex;
+        width: 100%;
+        height: 48px;
+        padding: 0px 16px;
+        align-items: center;
+        gap: 16px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        border: 1px solid $secondary_black;
+    }
+    &__btn {
+        width: 398px;
+        margin-top: 16px;
+    }
+    &__buttons-group {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    &__programmer {
+        position: absolute;
+        top: 516px;
+        right: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        height: 170px;
+        flex-shrink: 0;
+        border-radius: 10000px;
+        background: $icon_main;
+    }
+    &__lightning {
+        position: absolute;
+        top: 134px;
+        left: 111px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        flex-shrink: 0;
+        border-radius: 10000px;
+        background: $icon_main;
+    }
+    &__message {
+        position: absolute;
+        top: 752px;
+        left: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 140px;
+        height: 140px;
+        flex-shrink: 0;
+        border-radius: 10000px;
+        background: $icon_main;
+    }
+    &__message-icon {
+        width: 60px;
+        height: 60px;
+    }
+    &__link-item {
+        height: 20px;
+    }
+    &__btn-logo {
+        background: $white_hover;
+        padding: 2px;
+    }
+    &__logo {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .application {
+        &__programmer {
+            display: none;
+        }
+        &__lightning {
+            display: none;
+        }
+        &__message {
+            display: none;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .application {
+        &__form {
+            max-width: 300px;
+        }
+        &__btn {
+            width: 250px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .application {
+        &__form {
+            max-width: 240px;
+        }
+        &__btn {
+            width: 190px;
+        }
+        &__empty {
+            display: none;
+        }
+    }
+}

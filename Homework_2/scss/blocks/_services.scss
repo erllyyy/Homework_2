@@ -1,0 +1,128 @@
+.services {
+    background: $black_main;
+    height: 768px;
+    text-align: center;
+    padding: 120px 0px;
+    &__title {
+        color: $white_main;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 64px; /* 133.333% */
+        letter-spacing: -0.96px;
+    }
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        gap: 28px;
+        margin-top: 80px;
+    }
+    &__type {
+        display: flex;
+        padding: 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 56px;
+        flex: 1 0 0;
+
+        background: $white_main;
+        border-radius: 16px;
+        // width: 368px;
+        // height: 384px;
+    }
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        align-self: stretch;
+    }
+    &__descr-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
+    }
+    &__title-number {
+        color: $black_main;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 200% */
+        opacity: 0.5;
+    }
+    &__title-text {
+        color: $black_main;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 120% */
+    }
+    &__descr-text {
+        color: $black_main;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        max-width: 288px;
+    }
+    &__divider {
+        width: 80px;
+        height: 1px;
+        opacity: 0.2;
+        background: $black_main;
+    }
+    &__price {
+        color: $black_main;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 100% */
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .services {
+        &__type {
+            gap: 28px;
+        }
+        &__title {
+            font-size: 36px;
+        }
+        &__descr-text {
+            font-size: 10px;
+        }
+        &__price {
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .services {
+        &__type {
+            gap: 14px;
+        }
+        &__title {
+            font-size: 18px;
+        }
+    }
+}
+@media (max-width: 630px) {
+    .services {
+        height: auto;
+        &__content {
+            flex-direction: column;
+            align-items: normal;
+        }
+        &__descr {
+            flex-direction: row;
+            align-items: normal;
+        }
+    }
+}

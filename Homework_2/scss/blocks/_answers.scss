@@ -1,0 +1,104 @@
+.answers {
+    background: $black_main;
+    text-align: center;
+    padding: 120px 0px;
+    &__h2 {
+        color: $white_main;
+    }
+    &__questions {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        margin-top: 80px;
+    }
+    &__question {
+        display: flex;
+        padding: 32px 40px;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        border-radius: 16px;
+        border: 1px solid #CCC;
+        background: $white_main;
+    }
+    &__why {
+        display: flex;
+        padding: 32px 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        align-self: stretch;
+        border-radius: 16px;
+        border: 1px solid $black_additional;
+        background: $white_main;
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+    }
+    &__descr {
+        text-align: left;
+    }
+    &__tilda {
+        text-align: left;
+        max-width: 800px;
+    }
+    &__also {
+        text-align: left;
+        margin-top: 30px;
+    }
+    &__list {
+
+        list-style-position: inside;
+    }
+    &__list-item {
+        text-align: left;
+    }
+}
+
+
+
+
+
+@media (max-width: 800px) {
+    .answers {
+        &__descr {
+            max-width: 300px;
+        }
+        &__why-title {
+            font-size: 15px;
+        }
+        &__tilda {
+            font-size: 12px;
+        }
+        &__also {
+            font-size: 12px;
+        }
+        &__list-item {
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .answers {
+        &__descr {
+            max-width: 200px;
+        }
+        &__why-title {
+            font-size: 10px;
+        }
+        &__tilda {
+            font-size: 8px;
+        }
+        &__also {
+            font-size: 8px;
+        }
+        &__list-item {
+            font-size: 8px;
+        }
+    }
+}
